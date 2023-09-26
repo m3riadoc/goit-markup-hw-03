@@ -162,7 +162,11 @@ img {
 }
 
 .value {
+<<<<<<< HEAD
   width: calc((100% - 72px) / 4);
+=======
+  flex-basis: calc((100% - 3 * 24px) / 4);
+>>>>>>> bc7f9fb056aa4d9b38ddd1f58e8fd3357d14440b
 }
 
 .values-header {
