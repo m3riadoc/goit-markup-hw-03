@@ -7,6 +7,12 @@
   --btn: #e7e9fc;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text);
@@ -19,14 +25,20 @@ img {
 
 .div-container {
   display: flex;
+  width: 1440px;
+  height: 72px;
+  gap: 290px;
 }
 
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
+
+  align-items: center;
 }
 /* header section */
+
 .logo {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
@@ -44,6 +56,8 @@ img {
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .link {
@@ -85,6 +99,9 @@ img {
 
 .address {
   font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
@@ -102,14 +119,24 @@ img {
   letter-spacing: 0.02em;
   color: var(--text);
 }
+
+.solutions-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+}
 /* First Section */
 
 .main {
   background-color: var(--navyblue);
   padding: 188px 0;
+  display: flex;
 }
 
 .header {
+  height: 72px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -120,6 +147,8 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
+  align-items: center;
+  justify-content: center;
 }
 
 .action-btn {
