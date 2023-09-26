@@ -4,12 +4,27 @@
   --header: #4d5ae5;
   --navyblue: #2e2f42;
   --cloud: #f4f4fd;
+  --btn: #e7e9fc;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text);
   background-color: var(--white);
+}
+
+img {
+  display: block;
+}
+
+.div-container {
+  display: flex;
+}
+
+.container {
+  width: 1158px;
+  margin: 0;
+  padding: 0 15px 0 15px;
 }
 /* header section */
 .logo {
@@ -22,6 +37,15 @@ body {
   color: var(--header);
 }
 
+.toplogo {
+  margin-right: 76px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .link {
   text-decoration: none;
 }
@@ -32,6 +56,8 @@ body {
 
 .list {
   list-style: none;
+  display: flex;
+  gap: 40px;
 }
 
 .nav {
@@ -40,6 +66,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navyblue);
+  padding: 24px 0 24px;
 }
 
 .nav:hover,
@@ -60,6 +87,15 @@ body {
   font-style: normal;
 }
 
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.contact link {
+  margin-right: 0;
+}
+
 .contact {
   font-size: 16px;
   line-height: 1.5;
@@ -70,6 +106,11 @@ body {
 
 .main {
   background-color: var(--navyblue);
+  padding: 188px 0;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .main-header {
@@ -78,6 +119,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
 }
 
 .action-btn {
@@ -89,9 +131,30 @@ body {
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 /* Second Section */
+.visually-hidden {
+  visibility: hidden;
+}
+
+.values-list {
+  display: flex;
+  gap: 24px;
+}
+
+.value {
+  width: calc((100% - 72px) / 4);
+}
+
+.values-header {
+  margin-bottom: 8px;
+}
 
 .header-three {
   font-size: 20px;
@@ -110,6 +173,23 @@ body {
 
 /*Third Section */
 
+.section-three {
+  padding-bottom: 120px;
+}
+
+.section-three-header {
+  margin-bottom: 72px;
+}
+
+.images-list {
+  display: flex;
+  gap: 24px;
+}
+
+.imagesone {
+  width: calc((100% - 48px) / 3);
+}
+
 .header-two {
   font-size: 36px;
   line-height: 1.11;
@@ -122,28 +202,110 @@ body {
 /*Fourth Section */
 .our-team {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.section-four-header {
+  margin-bottom: 72px;
+}
+
+.list-four {
+  display: flex;
+  gap: 24px;
 }
 
 .people-list {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.container-img {
+  padding: 32px 16px;
+}
+
+.images-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.photos-desc {
+  text-align: center;
 }
 
 /*Footer*/
 
 .footer {
   background-color: var(--navyblue);
+  padding: 100px 0;
 }
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .motto {
   line-height: 1.5;
   color: var(--cloud);
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 
 .studio-footer {
   color: #f4f4fd;
 }
 
-/*portfolio page */
+/*PORTFOLIO PAGE */
+
+/* Portfolio Header */
+
+.container-portfolio {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.portfolio-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.navigation-portfolio {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-logo {
+  margin-right: 76px;
+}
+
+.portfolio-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.portfolio-link {
+  padding: 24px 0;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 40px;
+}
+
+/*Portfolio Main */
+
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-section-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 
 .btn {
   font-family: "Roboto", sans-serif;
@@ -154,10 +316,36 @@ body {
   color: var(--header);
   background-color: var(--cloud);
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--btn);
+  border-radius: 4px;
 }
 
 .btn:hover,
 .btn:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
+}
+
+.portfolio-list-two {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-image {
+  calc((100% - 48px) / 3)
+}
+
+.app{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
+
+.portfolio-desc{
+  margin-bottom: 8px;
 }
