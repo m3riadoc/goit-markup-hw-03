@@ -5,10 +5,9 @@
   --dark: #2e2f42;
   --light: #f4f4fd;
   --accent: #e7e9fc;
-  --pressed-rate: #404BBF;
-  --success: #31D0AA;
-  --subtle-text: #8E8F99;
-
+  --pressed-rate: #404bbf;
+  --success: #31d0aa;
+  --subtle-text: #8e8f99;
 }
 
 body {
@@ -87,8 +86,13 @@ img {
   /*new-end*/
 }
 
-.nav:hover, .nav:focus, .contact:hover, .contact:focus, .action-btn:focus, .action-btn:hover {
-  color: #404bbf
+.nav:hover,
+.nav:focus,
+.contact:hover,
+.contact:focus,
+.action-btn:focus,
+.action-btn:hover {
+  color: #404bbf;
 }
 
 .address {
@@ -173,7 +177,7 @@ img {
 }
 
 .value {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .header-value {
@@ -207,7 +211,7 @@ img {
 }
 
 .job {
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 3 * 16px) / 3);
 }
 /*new-end*/
 
@@ -222,7 +226,7 @@ img {
 .team {
   background-color: #ffffff;
   /*new*/
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   /*new-end*/
 }
@@ -238,7 +242,7 @@ img {
 }
 
 .details {
-  padding: 32px 16px;
+  padding: 32px 16px 32px;
 }
 
 .name {
@@ -283,7 +287,7 @@ img {
 /*Portfolio page */
 
 .btn {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -298,7 +302,8 @@ img {
   /*new-end*/
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #ffffff;
   background-color: #404bbf;
   /*new*/
@@ -318,7 +323,7 @@ img {
   margin-bottom: 72px;
 }
 
-.projects-list{
+.projects-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -326,13 +331,13 @@ img {
 }
 
 .project {
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .about {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
-  border-top: none; 
+  border-top: none;
 }
 
 .application {
