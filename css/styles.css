@@ -140,7 +140,7 @@ img {
 
 /* Second Section */
 .visually-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .section-two {
