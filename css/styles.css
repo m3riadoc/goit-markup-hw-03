@@ -139,8 +139,8 @@ img {
 }
 
 /* Second Section */
-.visually-hidden {
-  visibility: hidden;
+.header-none {
+  display: none;
 }
 
 .section-two {
@@ -153,7 +153,7 @@ img {
 }
 
 .value {
-  flex-basis: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .values-header {
