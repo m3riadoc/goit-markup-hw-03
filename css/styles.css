@@ -162,7 +162,7 @@ img {
 }
 
 .value {
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .values-header {
@@ -234,10 +234,7 @@ img {
 }
 
 .container-img {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 32px 16px 32px;
 }
 
 .images-header {
